@@ -1,8 +1,9 @@
 # ScavLib — Scav Prototype Mod API Library
 
 **Version:** 0.2.0  
+**Authors:** Kanisuko / QinShenYu  
 **Required by:** Any mod built on ScavLib  
-**Nexus Mods:** [Nexus Mods Page](https://www.nexusmods.com/scavprototype/mods/83)  
+**Source (DLL repository):** [github.com/Kanisuko/ScavLib-API-DLL-Repository](https://github.com/Kanisuko/ScavLib-API-DLL-Repository)  
 > Full source code will be released once the API reaches a stable milestone.
 
 ---
@@ -38,7 +39,7 @@ player vitals, skills, and items.
 ## Requirements
 
 - **BepInEx 5.x** (64-bit version recommended)
-- Scav Prototype game client (on Steam)
+- Scav Prototype game client (Steam)
 
 ---
 
@@ -267,3 +268,9 @@ public class YourPlugin : BaseUnityPlugin { ... }
 ### 0.1.0
 - Initial release: MenuWindow/MenuBuilder, ConfigManager, EventBus,
   CommandRegistry, GameUtil, ModRegistry
+
+---
+
+## Shout-outs
+
+Developed by **Kanisuko** and **QinShenYu**.
