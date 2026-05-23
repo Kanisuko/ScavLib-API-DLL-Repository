@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.2.0 (0.2.1)
+**Version:** 0.2.2
 **Required by:** Any mod built on ScavLib  
 **Nexus Mods:** [Nexus Mods Page](https://www.nexusmods.com/scavprototype/mods/83)  
 > Full source code will be released once the API reaches a stable milestone.
@@ -246,6 +246,10 @@ public class YourPlugin : BaseUnityPlugin { ... }
 ---
 
 ## Changelog
+
+### 0.2.2
+
+- Fixed menu windows not rendering by migrating `MenuManager` from a standalone `DontDestroyOnLoad` GameObject to a `MonoBehaviour` renderer attached to `PlayerCamera`, and removed the unused `MenuWindowStyle` enum.
 
 ### 0.2.1 (Version code NOT changed in DLL)
 
