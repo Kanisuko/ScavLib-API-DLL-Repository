@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.3.0
+**Version:** 0.4.0
 
 **Required by:** Any mod built on ScavLib  
 
@@ -16,10 +16,13 @@ as building in-game menus, managing configurations, registering console commands
 handling custom events, interacting safely with the game state, and working with
 player state, skills, limbs, and items.
 
-Version 0.3.0 expands `PlayerUtil` to full coverage of the player `Body` — over
-70 read/write methods spanning vitals, circulation, neurology, toxicology,
-immunity, and external conditions — alongside a `Thresholds` constants class that
-mirrors every moodle trigger value used by the game's own UI.
+Version 0.4.0 introduces a first-class **lifecycle system** for mods. By
+registering an `IModLifecycle` implementation alongside your `ModInfo`, your mod
+receives automatic callbacks for world load, layer transitions, and teardown —
+without manually subscribing to the EventBus. Three new pre-defined game events
+(`LayerLoadedEvent`, `WorldUnloadingEvent`, `WorldDestroyedEvent`) are also added
+in this release, giving mods full visibility into the world lifecycle. `ModInfo`
+now supports optional dependency declarations, surfaced in `scavlib status` output.
 
 > **Note for players:** This is a core dependency library. It does not add any
 > content on its own, but is required by other mods to function.
@@ -37,7 +40,7 @@ mirrors every moodle trigger value used by the game's own UI.
    scavlib status
    ```
    You should see ScavLib's version, authors, and all registered mods printed
-   to the console.
+   to the console. Mods registered with a lifecycle object are annotated with `[F]`.
 
 ---
 
@@ -50,15 +53,14 @@ mirrors every moodle trigger value used by the game's own UI.
 
 ## For Developers
 
-Full API documentation and usage examples will accompany the source code
-release. In the meantime, all public methods carry XML doc comments visible
-in any IDE with IntelliSense support.
+Full API documentation is available on the [Wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
+All public methods carry XML doc comments visible in any IDE with IntelliSense support.
 
 To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
 reference and declare the dependency in your BepInEx plugin attribute:
 
 ```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.3.0")]
+[BepInDependency("com.kanisuko.scavlib", "0.4.0")]
 [BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
 public class YourPlugin : BaseUnityPlugin { ... }
 ```
