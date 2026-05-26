@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.4.0
+**Version:** 0.4.1
 
 **Required by:** Any mod built on ScavLib  
 
@@ -15,14 +15,6 @@ simplify mod development for **Scav Prototype**. It streamlines common tasks suc
 as building in-game menus, managing configurations, registering console commands,
 handling custom events, interacting safely with the game state, and working with
 player state, skills, limbs, and items.
-
-Version 0.4.0 introduces a first-class **lifecycle system** for mods. By
-registering an `IModLifecycle` implementation alongside your `ModInfo`, your mod
-receives automatic callbacks for world load, layer transitions, and teardown —
-without manually subscribing to the EventBus. Three new pre-defined game events
-(`LayerLoadedEvent`, `WorldUnloadingEvent`, `WorldDestroyedEvent`) are also added
-in this release, giving mods full visibility into the world lifecycle. `ModInfo`
-now supports optional dependency declarations, surfaced in `scavlib status` output.
 
 > **Note for players:** This is a core dependency library. It does not add any
 > content on its own, but is required by other mods to function.
@@ -60,7 +52,7 @@ To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
 reference and declare the dependency in your BepInEx plugin attribute:
 
 ```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.4.0")]
+[BepInDependency("com.kanisuko.scavlib", "0.4.1")]
 [BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
 public class YourPlugin : BaseUnityPlugin { ... }
 ```
