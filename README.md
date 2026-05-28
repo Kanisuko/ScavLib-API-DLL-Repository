@@ -1,6 +1,9 @@
+## **`README.md`**
+
+```markdown
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.4.1
+**Version:** 0.4.2
 
 **Required by:** Any mod built on ScavLib  
 
@@ -21,6 +24,21 @@ player state, skills, limbs, and items.
 
 ---
 
+## What's New in 0.4.2
+
+- **Hierarchical subcommands** — `BaseCommand.SubCommands` + `ExecuteSubCommand()`
+  for structured command routing with automatic Tab completion and help output.
+- **Command owner ledger** — `CommandRegistry.TryRegister()` tracks which mod
+  owns each command; `Unregister()` safely removes only ScavLib-registered commands.
+- **`scavlib check`** — new diagnostic subcommand reporting patch status and
+  command ownership.
+- **Patch failure isolation** — a single failing Harmony patch no longer takes
+  down the entire plugin.
+- **`GameUtil.Log` multi-line support** — embedded newlines now render as
+  separate console lines.
+
+---
+
 ## Installation
 
 1. Ensure you have **BepInEx 5** installed for Scav Prototype.
@@ -33,6 +51,11 @@ player state, skills, limbs, and items.
    ```
    You should see ScavLib's version, authors, and all registered mods printed
    to the console. Mods registered with a lifecycle object are annotated with `[F]`.
+
+   For a full diagnostic (patch status, command owners), run:
+   ```
+   scavlib check
+   ```
 
 ---
 
@@ -52,7 +75,7 @@ To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
 reference and declare the dependency in your BepInEx plugin attribute:
 
 ```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.4.1")]
+[BepInDependency("com.kanisuko.scavlib", "0.4.2")]
 [BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
 public class YourPlugin : BaseUnityPlugin { ... }
 ```
