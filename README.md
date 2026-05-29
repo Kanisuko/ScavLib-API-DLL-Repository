@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.4.1
+**Version:** 0.5.0
 
 **Required by:** Any mod built on ScavLib  
 
@@ -11,7 +11,7 @@
 ## Description
 
 ScavLib is a foundational developer-focused API and utility library designed to
-simplify mod development for **Scav Prototype**. It streamlines common tasks such
+simplify mod development for **Scav Prototype** (a.k.a. **Casualties Unknown**). It streamlines common tasks such
 as building in-game menus, managing configurations, registering console commands,
 handling custom events, interacting safely with the game state, and working with
 player state, skills, limbs, and items.
@@ -52,7 +52,7 @@ To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
 reference and declare the dependency in your BepInEx plugin attribute:
 
 ```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.4.1")]
+[BepInDependency("com.kanisuko.scavlib", "0.5.0")]
 [BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
 public class YourPlugin : BaseUnityPlugin { ... }
 ```
