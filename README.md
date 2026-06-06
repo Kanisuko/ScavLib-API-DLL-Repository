@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.6.1
+**Version:** 0.7.0
 
 **Required by:** Any mod built on ScavLib  
 
@@ -52,7 +52,7 @@ To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
 reference and declare the dependency in your BepInEx plugin attribute:
 
 ```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.6.1")]
+[BepInDependency("com.kanisuko.scavlib", "0.7.0")]
 [BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
 public class YourPlugin : BaseUnityPlugin { ... }
 ```
