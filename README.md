@@ -6,6 +6,8 @@
 
 **Nexus Mods:** [Nexus Mods Page](https://www.nexusmods.com/scavprototype/mods/83)  
 
+**Source Code:** [Kanisuko/ScavLib-API](https://github.com/Kanisuko/ScavLib-API)  
+
 ---
 
 ## Description
