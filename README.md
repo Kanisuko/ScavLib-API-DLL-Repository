@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.7.1
+**Version:** 0.7.2
 
 **Required by:** Any mod built on ScavLib  
 
@@ -41,7 +41,7 @@ player state, skills, limbs, and items.
 ## Requirements
 
 - **BepInEx 5.x** (64-bit version recommended)
-- Scav Prototype game client (on Steam)
+- Casualties Unknown game client (on Steam)
 
 ---
 
@@ -49,12 +49,3 @@ player state, skills, limbs, and items.
 
 Full API documentation is available on the [Wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
 All public methods carry XML doc comments visible in any IDE with IntelliSense support.
-
-To reference ScavLib in your own mod project, add `ScavLib.dll` as an assembly
-reference and declare the dependency in your BepInEx plugin attribute:
-
-```csharp
-[BepInDependency("com.kanisuko.scavlib", "0.7.1")]
-[BepInPlugin("com.yourname.yourmod", "YourMod", "1.0.0")]
-public class YourPlugin : BaseUnityPlugin { ... }
-```
