@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.7.3
+**Version:** 0.7.4 - Hotfix
 
 **Required by:** Any mod built on ScavLib  
 
@@ -48,3 +48,5 @@ player state, skills, limbs, and items.
 ## For Developers
 
 Full API documentation is available on the [Wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
+
+Of course, we recommend that you submit your issue report to this DLL repository.
