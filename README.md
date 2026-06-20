@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.7.4 - Hotfix
+**Version:** 0.7.5
 
 **Required by:** Any mod built on ScavLib  
 
