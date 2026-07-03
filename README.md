@@ -1,6 +1,6 @@
 # ScavLib — Scav Prototype Mod API Library
 
-**Version:** 0.8.0
+**Version:** 0.10.0
 
 **Required by:** Any mod built on ScavLib  
 
@@ -26,8 +26,8 @@ player state, skills, limbs, and items.
 ## Installation
 
 1. Ensure you have **BepInEx 5** installed for Scav Prototype.
-2. Download `ScavLib.dll`.
-3. Place `ScavLib.dll` into your game directory under `BepInEx/plugins/`.
+2. Download `ScavLib.zip`.
+3. Place `ScavLib.zip` into your game directory under `BepInEx/plugins/` and unzip it.
 4. Launch the game. To verify it loaded correctly, open the developer console
    and type:
    ```
@@ -47,6 +47,7 @@ player state, skills, limbs, and items.
 
 ## For Developers
 
-Full API documentation is available on the [Wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
+Full API documentation is available on the [wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
+Alternatively, we are migrating the documentation to [here](wiki.ethertaco.org/scavlib).
 
 Of course, we recommend that you submit your issue report to this DLL repository.
