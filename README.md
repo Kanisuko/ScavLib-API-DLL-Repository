@@ -1,4 +1,4 @@
-# ScavLib — Scav Prototype Mod API Library
+# ScavLib — Casualties Unknown Mod API Library
 
 **Version:** 0.10.0
 
@@ -6,7 +6,7 @@
 
 **Nexus Mods:** [Nexus Mods Page](https://www.nexusmods.com/scavprototype/mods/83)  
 
-**Source Code:** [Kanisuko/ScavLib-API](https://github.com/Kanisuko/ScavLib-API)  
+**Source Code:** [Ethertaco/ScavLib-API](https://github.com/Ethertaco/ScavLib-API)  
 
 ---
 
@@ -48,6 +48,7 @@ player state, skills, limbs, and items.
 ## For Developers
 
 Full API documentation is available on the [wiki](https://github.com/Kanisuko/ScavLib-API-DLL-Repository/wiki).
-Alternatively, we are migrating the documentation to [here](wiki.ethertaco.org/scavlib).
+
+Alternatively, we are migrating the documentation to [here](https://wiki.ethertaco.org/scavlib).
 
 Of course, we recommend that you submit your issue report to this DLL repository.
